@@ -1,3 +1,5 @@
+import time
+
 # Part A
 def a(x,file):
     for i in file:
@@ -15,9 +17,9 @@ def b(x,file):
 
 with open('day1') as file:
   nums = [int(i.strip()) for i in file]
-
+start = time.time()
 a1 = a(2020,nums)
 a2 = b(2020,nums)
 
-print("part a: ", a1)
-print("Part b: ", a2)
+print("part a: ", a1, "time:", {time.time() - start})
+print("Part b: ", a2, "time:", {time.time() - start})
