@@ -18,5 +18,9 @@ def b(row):
 
     return l1 != l2 and letter in (l1, l2)
 
-print(len([1 for i in nums if a(i) is True]))
-print(len([1 for i in nums if b(i) is True]))
+start = time.time()
+ans1 = len([1 for i in nums if a(i) is True])
+ans2 = len([1 for i in nums if b(i) is True])
+
+print("part a:",ans1,"Time:", {time.time()-start})
+print("part b:",ans2,"Time:", {time.time()-start})
