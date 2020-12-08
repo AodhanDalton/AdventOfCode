@@ -72,7 +72,3 @@ In your expense report, what is the product of the three entries that sum to 202
 
 
 
-> The code for the second part is on the branch: part-two, and at the moment is an ugly solution for the problem
-
-
-
